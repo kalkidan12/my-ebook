@@ -3,6 +3,7 @@ import 'package:my_ebook/theme/theme_config.dart';
 import 'package:my_ebook/util/consts.dart';
 import 'package:flutter/material.dart';
 import 'package:my_ebook/view_models/app_provider.dart';
+import 'package:my_ebook/views/splash/splash.dart';
 import 'package:provider/provider.dart';
 
 class MyApp extends StatelessWidget {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
           title: Constants.appName,
           theme: themeData(appProvider.theme),
           darkTheme: themeData(ThemeConfig.darkTheme),
-          home: Container(),
+          home: Splash(),
         );
       },
     );
